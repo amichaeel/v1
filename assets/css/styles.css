@@ -1,0 +1,114 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-400%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+* {
+    background-color: #08192f !important;
+}
+
+.nav-buttons {
+    font-family: SF Mono, "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    font-size: 13px;
+    font-weight: lighter !important;
+    color: #ccd6f6 !important;
+}
+
+.horizontal-list {
+    padding: 0;
+    text-align: center;
+}
+.horizontal-list li {
+    display: inline;
+}
+
+.nav-buttons:hover {
+    transform: translateY(-1.0px);
+    color: aquamarine !important;
+}
+
+.center {
+    text-align: center;
+}
+
+.intro {
+    padding-top: 200px;
+    margin-right: 20px;
+    max-width: 900px;
+}
+
+#hello {
+    font-family: SF Mono, "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    color: aquamarine;
+    animation: fadeIn 3s;
+
+}
+
+#name {
+    font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+    font-weight: 600;
+    font-size: 3vmax;
+    color: #ccd6f6;
+    animation: fadeIn 4s;
+}
+
+#description {
+    font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+    font-weight: 600;
+    font-size: 3vmax;
+    color: #8892b0;
+    animation: fadeIn 5s;
+}
+
+#long-description {
+    font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+    font-weight: lighter !important;
+    font-size: 20px;
+    color: #8892b0;
+    animation: fadeIn 6s;
+}
+
+
+.footer-button {
+    padding: 10px;
+    color: #ccd6f6;
+    animation: fadeIn 2s;
+}
+
+.footer-button:hover {
+    color: aquamarine !important;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.home {
+    animation: slideDown 0.25s;
+}
+
+.about {
+    animation: slideDown 0.5s;
+}
+
+.contact {
+    animation: slideDown 0.75s;
+}
+
+.projects {
+    animation: slideDown 1s;
+}
+
