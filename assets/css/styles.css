@@ -36,8 +36,12 @@
 }
 
 .nav-buttons:hover {
-    transform: translateY(-1.0px);
+    transform: scale(0.9);
     color: aquamarine !important;
+}
+
+#github-button {
+
 }
 
 .center {
@@ -45,12 +49,13 @@
 }
 
 .intro {
-    padding-top: 200px;
-    margin-right: 20px;
-    max-width: 900px;
+    margin-top: 10vmin;
+    bottom: 5vmin;
+    max-width: 35vmax;
 }
 
 #hello {
+    padding-bottom: 5px;
     font-family: SF Mono, "Fira Code", "Fira Mono", "Roboto Mono", monospace;
     color: aquamarine;
     animation: fadeIn 3s;
@@ -58,6 +63,7 @@
 }
 
 #name {
+    padding-top: 5px;
     font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
     font-weight: 600;
     font-size: 3vmax;
@@ -66,6 +72,7 @@
 }
 
 #description {
+    padding-top: 5px;
     font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
     font-weight: 600;
     font-size: 3vmax;
@@ -74,6 +81,7 @@
 }
 
 #long-description {
+    padding-top: 5px;
     font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
     font-weight: lighter !important;
     font-size: 20px;
@@ -81,6 +89,18 @@
     animation: fadeIn 6s;
 }
 
+#resume {
+    animation: fadeIn 2s;
+    margin-top: 2vmax;
+    font-family: SF Mono, "Fira Code", "Fira Mono", "Roboto Mono", monospace !important;
+    font-weight: lighter;
+    color: aquamarine;
+    border-color: aquamarine;
+}
+
+#resume:hover {
+    background-color: rgba(102, 205, 170, 0.27) !important;
+}
 
 .footer-button {
     padding: 10px;
