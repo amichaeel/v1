@@ -16,6 +16,34 @@
     }
 }
 
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes hoverUp {
+    from {
+        transform: translateY(0%);
+    }
+    to {
+        transform: translateY(-10%);
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(-10%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+
 * {
     background-color: #08192f !important;
 }
@@ -27,21 +55,10 @@
     color: #ccd6f6 !important;
 }
 
-.horizontal-list {
-    padding: 0;
-    text-align: center;
-}
-.horizontal-list li {
-    display: inline;
-}
 
 .nav-buttons:hover {
     transform: scale(0.9);
     color: aquamarine !important;
-}
-
-#github-button {
-
 }
 
 .center {
@@ -50,34 +67,33 @@
 
 .intro {
     margin-top: 10vmin;
-    bottom: 5vmin;
-    max-width: 35vmax;
+    max-width: 70vmax !important;
 }
 
 #hello {
     padding-bottom: 5px;
     font-family: SF Mono, "Fira Code", "Fira Mono", "Roboto Mono", monospace;
     color: aquamarine;
-    animation: fadeIn 3s;
-
+    display: block;
+    animation: slideRight 1s, fadeIn 2s;
 }
 
 #name {
     padding-top: 5px;
     font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
-    font-weight: 600;
-    font-size: 3vmax;
+    font-weight: bold;
+    font-size: 5vmax;
     color: #ccd6f6;
-    animation: fadeIn 4s;
+    animation: slideRight 1.25s, fadeIn 2s;
 }
 
 #description {
     padding-top: 5px;
     font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
-    font-weight: 600;
+    font-weight: bold;
     font-size: 3vmax;
     color: #8892b0;
-    animation: fadeIn 5s;
+    animation: slideRight 1.5s, fadeIn 2s;
 }
 
 #long-description {
@@ -86,11 +102,13 @@
     font-weight: lighter !important;
     font-size: 20px;
     color: #8892b0;
-    animation: fadeIn 6s;
+    display: block;
+    animation: slideRight 2s, fadeIn 2s !important;
 }
 
 #resume {
-    animation: fadeIn 2s;
+    display: block;
+    animation: slideRight 2s, fadeIn 4s !important;
     margin-top: 2vmax;
     font-family: SF Mono, "Fira Code", "Fira Mono", "Roboto Mono", monospace !important;
     font-weight: lighter;
@@ -105,16 +123,47 @@
 .footer-button {
     padding: 10px;
     color: #ccd6f6;
-    animation: fadeIn 2s;
 }
 
 .footer-button:hover {
     color: aquamarine !important;
 }
 
-ul {
-    list-style-type: none;
+.horizontal-list {
+    padding: 0;
+    text-align: center;
 }
+.horizontal-list li {
+    display: inline;
+}
+
+.horizontal-list li a:hover {
+    transform: scale(0.9);
+}
+
+#github-button {
+    display: inline-block;
+    animation: fadeIn 1s, slideUp 0.25s;
+}
+
+#twitter-button {
+    display: inline-block;
+    animation: fadeIn 1s, slideUp 0.5s;
+}
+
+#linkedin-button {
+    display: inline-block;
+    animation: fadeIn 1s, slideUp 0.75s;
+}
+
+#ig-button {
+    display: inline-block;
+    animation: fadeIn 1s, slideUp 1s;
+}
+
+/*#ig-button:hover {*/
+/*    transform: scale(0.9);*/
+/*}*/
 
 .home {
     animation: slideDown 0.25s;
