@@ -25,6 +25,16 @@
     }
 }
 
+@keyframes slideUp-text {
+    from {
+        transform: translateY(50%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+
 @keyframes hoverUp {
     from {
         transform: translateY(0%);
@@ -36,7 +46,7 @@
 
 @keyframes slideRight {
     from {
-        transform: translateX(-10%);
+        transform: translateX(-100%);
     }
     to {
         transform: translateX(0%);
@@ -45,10 +55,13 @@
 
 
 * {
-    background-color: #08192f !important;
+    background-color: #08121e !important;
+    /*08192f*/
 }
 
 .nav-buttons {
+    display: inline-block;
+    transition: 0.25s;
     font-family: SF Mono, "Fira Code", "Fira Mono", "Roboto Mono", monospace;
     font-size: 13px;
     font-weight: lighter !important;
@@ -57,7 +70,6 @@
 
 
 .nav-buttons:hover {
-    transform: scale(0.9);
     color: aquamarine !important;
 }
 
@@ -75,7 +87,7 @@
     font-family: SF Mono, "Fira Code", "Fira Mono", "Roboto Mono", monospace;
     color: aquamarine;
     display: block;
-    animation: slideRight 1s, fadeIn 2s;
+    animation: slideUp-text 1s, fadeIn 2s;
 }
 
 #name {
@@ -84,7 +96,7 @@
     font-weight: bold;
     font-size: 5vmax;
     color: #ccd6f6;
-    animation: slideRight 1.25s, fadeIn 2s;
+    animation: slideUp-text 1s, fadeIn 2s;
 }
 
 #description {
@@ -93,7 +105,7 @@
     font-weight: bold;
     font-size: 3vmax;
     color: #8892b0;
-    animation: slideRight 1.5s, fadeIn 2s;
+    animation: slideUp-text 1s, fadeIn 2s;
 }
 
 #long-description {
@@ -103,7 +115,7 @@
     font-size: 20px;
     color: #8892b0;
     display: block;
-    animation: slideRight 2s, fadeIn 2s !important;
+    animation: slideUp-text 1s, fadeIn 2s;
 }
 
 #resume {
@@ -138,46 +150,67 @@
 }
 
 .horizontal-list li a:hover {
-    transform: scale(0.9);
+    transform: translateY(-10%);
 }
 
 #github-button {
+    transition: 0.25s;
     display: inline-block;
     animation: fadeIn 1s, slideUp 0.25s;
 }
 
 #twitter-button {
+    transition: 0.25s;
     display: inline-block;
     animation: fadeIn 1s, slideUp 0.5s;
 }
 
 #linkedin-button {
+    transition: 0.25s;
     display: inline-block;
     animation: fadeIn 1s, slideUp 0.75s;
 }
 
 #ig-button {
+    transition: 0.25s;
     display: inline-block;
+    transition: 0.25s;
     animation: fadeIn 1s, slideUp 1s;
 }
 
-/*#ig-button:hover {*/
-/*    transform: scale(0.9);*/
-/*}*/
-
 .home {
+    transition: 0.25s;
     animation: slideDown 0.25s;
 }
 
+.home:hover {
+    transform: scale(1.1);
+}
+
 .about {
+    transition: 0.25s;
     animation: slideDown 0.5s;
 }
 
+.about:hover {
+    transform: scale(1.1);
+}
+
 .contact {
+    transition: 0.5s;
     animation: slideDown 0.75s;
 }
 
+.contact:hover {
+    transform: scale(1.1);
+}
+
 .projects {
+    transition: 0.25s;
     animation: slideDown 1s;
+}
+
+.projects:hover {
+    transform: scale(1.1);
 }
 
