@@ -53,10 +53,15 @@
     }
 }
 
-
-* {
-    background-color: #08121e !important;
-    /*08192f*/
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(255, 255, 255, 0)), url("../img/background-image.jpg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
 }
 
 .nav-buttons {
@@ -79,13 +84,13 @@
 
 .intro {
     margin-top: 10vmin;
-    max-width: 70vmax !important;
+    max-width: 40vmax !important;
 }
 
 #hello {
     padding-bottom: 5px;
     font-family: SF Mono, "Fira Code", "Fira Mono", "Roboto Mono", monospace;
-    color: aquamarine;
+    color: rgb(54, 108, 255);
     display: block;
     animation: slideUp-text 1s, fadeIn 2s;
 }
@@ -94,8 +99,8 @@
     padding-top: 5px;
     font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
     font-weight: bold;
-    font-size: 5vmax;
-    color: #ccd6f6;
+    font-size: 3vmax;
+    color: #ffffff;
     animation: slideUp-text 1s, fadeIn 2s;
 }
 
@@ -103,8 +108,8 @@
     padding-top: 5px;
     font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
     font-weight: bold;
-    font-size: 3vmax;
-    color: #8892b0;
+    font-size: 2vmax;
+    color: #c5cbdf;
     animation: slideUp-text 1s, fadeIn 2s;
 }
 
@@ -113,23 +118,38 @@
     font-family: Calibre, Inter, "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
     font-weight: lighter !important;
     font-size: 20px;
-    color: #8892b0;
+    color: #acb5d1;
     display: block;
     animation: slideUp-text 1s, fadeIn 2s;
 }
 
 #resume {
-    display: block;
+    animation: slideRight 2s, fadeIn 4s !important;
+    margin-top: 2vmax;
+    margin-right: 20px;
+    font-family: SF Mono, "Fira Code", "Fira Mono", "Roboto Mono", monospace !important;
+    font-weight: lighter;
+    color: rgb(54, 108, 255);
+    border-color: rgb(54, 108, 255);
+    box-shadow: 2in;
+}
+
+#contact {
     animation: slideRight 2s, fadeIn 4s !important;
     margin-top: 2vmax;
     font-family: SF Mono, "Fira Code", "Fira Mono", "Roboto Mono", monospace !important;
     font-weight: lighter;
-    color: aquamarine;
-    border-color: aquamarine;
+    color: rgb(54, 108, 255);
+    border-color: rgb(54, 108, 255);
+    box-shadow: 2in;
 }
 
 #resume:hover {
-    background-color: rgba(102, 205, 170, 0.27) !important;
+    background-color: rgb(0, 15, 56);
+}
+
+#contact:hover {
+    background-color: rgb(0, 15, 56);
 }
 
 .footer-button {
@@ -138,7 +158,7 @@
 }
 
 .footer-button:hover {
-    color: aquamarine !important;
+    color: rgb(54, 108, 255);
 }
 
 .horizontal-list {
@@ -176,41 +196,5 @@
     display: inline-block;
     transition: 0.25s;
     animation: fadeIn 1s, slideUp 1s;
-}
-
-.home {
-    transition: 0.25s;
-    animation: slideDown 0.25s;
-}
-
-.home:hover {
-    transform: scale(1.1);
-}
-
-.about {
-    transition: 0.25s;
-    animation: slideDown 0.5s;
-}
-
-.about:hover {
-    transform: scale(1.1);
-}
-
-.contact {
-    transition: 0.5s;
-    animation: slideDown 0.75s;
-}
-
-.contact:hover {
-    transform: scale(1.1);
-}
-
-.projects {
-    transition: 0.25s;
-    animation: slideDown 1s;
-}
-
-.projects:hover {
-    transform: scale(1.1);
 }
 
